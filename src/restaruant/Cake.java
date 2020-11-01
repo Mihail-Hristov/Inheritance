@@ -2,7 +2,7 @@ package restaruant;
 
 import java.math.BigDecimal;
 
-public class Cake extends Desert{
+public class Cake extends Dessert {
     final private double CAKE_GRAMS = 250;
     final private double CAKE_CALORIES = 1000;
     final private BigDecimal CAKE_PRICE = new BigDecimal(5);

@@ -2,10 +2,10 @@ package restaruant;
 
 import java.math.BigDecimal;
 
-public class Desert extends Food {
+public class Dessert extends Food {
     private double calories;
 
-    public Desert(String name, BigDecimal price, double grams, double calories) {
+    public Dessert(String name, BigDecimal price, double grams, double calories) {
         super(name, price, grams);
         this.calories = calories;
     }
