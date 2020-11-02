@@ -9,4 +9,10 @@ public class Dessert extends Food {
         super(name, price, grams);
         this.calories = calories;
     }
+
+    public double getCalories() {
+        return this.calories;
+    }
+
+
 }

@@ -3,11 +3,11 @@ package restaruant;
 import java.math.BigDecimal;
 
 public class Cake extends Dessert {
-    final private double CAKE_GRAMS = 250;
-    final private double CAKE_CALORIES = 1000;
-    final private BigDecimal CAKE_PRICE = new BigDecimal(5);
+    private static final double CAKE_GRAMS = 250;
+    private static final double CAKE_CALORIES = 1000;
+    private static final  BigDecimal CAKE_PRICE = new BigDecimal(5);
 
     public Cake(String name) {
-        super(name, new BigDecimal("5"), 250, 1000);
+        super(name, CAKE_PRICE, CAKE_GRAMS, CAKE_CALORIES);
     }
 }

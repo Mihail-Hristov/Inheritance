@@ -3,12 +3,13 @@ package restaruant;
 import java.math.BigDecimal;
 
 public class Coffee extends HotBeverage {
-    final private double COFFEE_MILLILITERS = 50;
-    final private BigDecimal COFFEE_PRICE = new BigDecimal("3.50");
+    private final static double COFFEE_MILLILITERS = 50;
+    private final static BigDecimal COFFEE_PRICE = BigDecimal.valueOf(3.5);
     private double caffeine;
 
-    public Coffee(String name, BigDecimal price, double millilitres) {
-        super(name, price, millilitres);
+    public Coffee(String name, double caffeine) {
+        super(name, COFFEE_PRICE, COFFEE_MILLILITERS);
+        this.caffeine = caffeine;
     }
 
     public double getCaffeine() {
