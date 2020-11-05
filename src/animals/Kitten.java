@@ -1,4 +1,4 @@
-package animal;
+package animals;
 
 public class Kitten extends Cat {
     private final static String KITTEN_GENDER = "Female";

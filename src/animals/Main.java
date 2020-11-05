@@ -1,4 +1,4 @@
-package animal;
+package animals;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,19 +22,23 @@ public class Main {
 
             Animal animal = null;
 
-            if (animalType.equals("Cat")) {
-                animal = new Cat(name, age, gender);
-            }else if (animalType.equals("Dog")) {
-                animal = new Dog(name, age, gender);
-            }else if (animalType.equals("Frog")) {
-                animal = new Frog(name, age, gender);
-            }else if (animalType.equals("Kitten")) {
-                animal = new Kitten(name, age, gender);
-            }else if (animalType.equals("Tomcat")) {
-                animal = new Tomcat(name, age, gender);
+            try {
+                if (animalType.equals("Cat")) {
+                    animal = new Cat(name, age, gender);
+                } else if (animalType.equals("Dog")) {
+                    animal = new Dog(name, age, gender);
+                } else if (animalType.equals("Frog")) {
+                    animal = new Frog(name, age, gender);
+                } else if (animalType.equals("Kitten")) {
+                    animal = new Kitten(name, age, gender);
+                } else if (animalType.equals("Tomcat")) {
+                    animal = new Tomcat(name, age, gender);
+                }
+                animals.add(animal);
+            }catch (Exception ex) {
+                System.out.println("Invalid input!");
             }
 
-            animals.add(animal);
 
             input = scanner.nextLine();
         }

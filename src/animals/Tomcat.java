@@ -1,4 +1,4 @@
-package animal;
+package animals;
 
 public class Tomcat extends Cat {
     private final static String TOMCAT_GENDER = "Male";

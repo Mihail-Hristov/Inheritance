@@ -1,4 +1,4 @@
-package animal;
+package animals;
 
 public class Animal {
     private String name;
@@ -7,9 +7,38 @@ public class Animal {
 
     public Animal (String name, int age, String gender) {
         this.name = name;
-        this.age = age;
-        this.gender = gender;
+        setAge(age);
+        setGender(gender);
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public String getGender() {
+        return this.gender;
+    }
+
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        }else {
+            throw new IllegalArgumentException("Invalid age");
+        }
+    }
+
+    public void setGender(String gender) {
+        if (gender.equals("Female") || gender.equals("Male")) {
+            this.gender = gender;
+        }else {
+            throw new IllegalArgumentException("Invalid gender");
+        }
+    }
+
 
     @Override
     public String toString() {
